@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful Websites for Students</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Top Free Websites for Students</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>33 Useful Websites for Students</h1>
-    <div class="details" id="detail1">
-        <button onclick="showDetail('detail1-content')">Show Details</button>
-        <div id="detail1-content" class="detail-content" style="display:none;">
-            <p>This is some detailed information about a useful website.</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Top Free Websites for Students</h1>
+  <p>Best free tools for learning, studying & productivity</p>
+</section>
+
+<!-- CARDS -->
+<section class="cards">
+  <div class="card" onclick="showDetail('chatgpt')">ChatGPT</div>
+  <div class="card" onclick="showDetail('khan')">Khan Academy</div>
+  <div class="card" onclick="showDetail('w3')">W3Schools</div>
+  <div class="card" onclick="showDetail('youtube')">YouTube</div>
+</section>
+
+<!-- DETAILS -->
+<section class="details">
+
+  <div class="detail" id="chatgpt">
+    <h2>ChatGPT</h2>
+    <p>ChatGPT is a free AI assistant that helps students learn faster.</p>
+    <ul>
+      <li>Homework help</li>
+      <li>Essay writing</li>
+      <li>Coding help</li>
+      <li>Concept explanations</li>
+    </ul>
+    <p><strong>Best for:</strong> All students</p>
+  </div>
+
+  <div class="detail" id="khan">
+    <h2>Khan Academy</h2>
+    <p>Khan Academy provides free education for students worldwide.</p>
+    <ul>
+      <li>Math & science courses</li>
+      <li>Practice exercises</li>
+      <li>Video lessons</li>
+    </ul>
+    <p><strong>Best for:</strong> School & college students</p>
+  </div>
+
+  <div class="detail" id="w3">
+    <h2>W3Schools</h2>
+    <p>W3Schools is a free platform to learn web development.</p>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Easy examples</li>
+      <li>No login required</li>
+    </ul>
+    <p><strong>Best for:</strong> Beginners in coding</p>
+  </div>
+
+  <div class="detail" id="youtube">
+    <h2>YouTube</h2>
+    <p>YouTube offers millions of free educational videos.</p>
+    <ul>
+      <li>Free tutorials</li>
+      <li>Any subject available</li>
+      <li>Learn at your own pace</li>
+    </ul>
+    <p><strong>Best for:</strong> Visual learners</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2025 Top Free Websites for Students</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
