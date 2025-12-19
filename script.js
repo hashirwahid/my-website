@@ -1,36 +1,33 @@
-function openModal(type) {
-  const modal = document.getElementById("modal");
-  const text = document.getElementById("modal-text");
-
-  const data = {
+function openModal(site) {
+  const content = {
     chatgpt: `
       <h2>ChatGPT</h2>
-      <p><b>What it is:</b> An AI tool that helps with writing, studying, coding, and idea generation.</p>
-      <p><b>Why useful:</b> Saves time, explains topics simply, and boosts productivity.</p>
-      <p><b>Best for:</b> Students, freelancers, programmers, writers.</p>
+      <p><strong>What it is:</strong> ChatGPT is an AI-powered assistant that helps students write essays, understand topics, solve problems, and generate ideas.</p>
+      <p><strong>Why useful:</strong> Perfect for studying, research, coding help, brainstorming, and learning faster.</p>
+      <p><strong>Best for:</strong> Students, writers, programmers, freelancers.</p>
     `,
     w3: `
       <h2>W3Schools</h2>
-      <p><b>What it is:</b> A beginner-friendly coding learning website.</p>
-      <p><b>Why useful:</b> Easy tutorials with examples.</p>
-      <p><b>Best for:</b> New programmers.</p>
+      <p><strong>What it is:</strong> A complete learning platform for web development.</p>
+      <p><strong>Why useful:</strong> Beginner-friendly tutorials with examples.</p>
+      <p><strong>Best for:</strong> Learning HTML, CSS, JavaScript, Python.</p>
     `,
     youtube: `
       <h2>YouTube</h2>
-      <p><b>What it is:</b> Video platform with tutorials and courses.</p>
-      <p><b>Why useful:</b> Visual learning.</p>
-      <p><b>Best for:</b> Everyone.</p>
+      <p><strong>What it is:</strong> Video platform with free educational content.</p>
+      <p><strong>Why useful:</strong> Learn visually from experts.</p>
+      <p><strong>Best for:</strong> Any subject, anytime.</p>
     `,
     github: `
       <h2>GitHub</h2>
-      <p><b>What it is:</b> Code hosting and collaboration platform.</p>
-      <p><b>Why useful:</b> Store projects and learn from others.</p>
-      <p><b>Best for:</b> Developers & students.</p>
+      <p><strong>What it is:</strong> Platform to host and share code.</p>
+      <p><strong>Why useful:</strong> Essential for developers and students.</p>
+      <p><strong>Best for:</strong> Coding projects and collaboration.</p>
     `
   };
 
-  text.innerHTML = data[type];
-  modal.style.display = "block";
+  document.getElementById("modal-text").innerHTML = content[site];
+  document.getElementById("modal").style.display = "block";
 }
 
 function closeModal() {
