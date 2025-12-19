@@ -1,90 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Top Free Websites for Students</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Top Free Websites for Students</h1>
-    <p>50+ free tools every student should know</p>
-    <div class="made-by">Made by: Hashir Wahid</div>
-  </section>
+body {
+  background: #f4f6f8;
+}
 
-  <!-- CARDS -->
-  <section class="container">
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1f2a37, #2d3a4b);
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+  position: relative;
+}
 
-    <div class="card">
-      <img src="images/chatgpt.png" alt="ChatGPT">
-      <h3>ChatGPT</h3>
-      <p>AI assistant for study & writing</p>
-    </div>
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
 
-    <div class="card">
-      <img src="images/khanacademy.png" alt="Khan Academy">
-      <h3>Khan Academy</h3>
-      <p>Free education platform</p>
-    </div>
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
 
-    <div class="card">
-      <img src="images/coursera.png" alt="Coursera">
-      <h3>Coursera</h3>
-      <p>University-level courses</p>
-    </div>
+.made-by {
+  position: absolute;
+  right: 40px;
+  bottom: 25px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+}
 
-    <div class="card">
-      <img src="images/edx.png" alt="edX">
-      <h3>edX</h3>
-      <p>Harvard & MIT courses</p>
-    </div>
+/* GRID CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
 
-    <div class="card">
-      <img src="images/youtube.png" alt="YouTube">
-      <h3>YouTube</h3>
-      <p>Free video learning</p>
-    </div>
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
 
-    <div class="card">
-      <img src="images/github.png" alt="GitHub">
-      <h3>GitHub</h3>
-      <p>Code hosting & collaboration</p>
-    </div>
+.card:hover {
+  transform: translateY(-6px);
+}
 
-    <div class="card">
-      <img src="images/w3schools.png" alt="W3Schools">
-      <h3>W3Schools</h3>
-      <p>Learn HTML, CSS & JavaScript</p>
-    </div>
+.card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
 
-    <div class="card">
-      <img src="images/canva.png" alt="Canva">
-      <h3>Canva</h3>
-      <p>Design presentations & posts</p>
-    </div>
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
 
-    <div class="card">
-      <img src="images/grammarly.png" alt="Grammarly">
-      <h3>Grammarly</h3>
-      <p>Improve writing & grammar</p>
-    </div>
-
-    <div class="card">
-      <img src="images/duolingo.png" alt="Duolingo">
-      <h3>Duolingo</h3>
-      <p>Learn languages for free</p>
-    </div>
-
-    <div class="card">
-      <img src="images/freecodecamp.png" alt="freeCodeCamp">
-      <h3>freeCodeCamp</h3>
-      <p>Learn coding with projects</p>
-    </div>
-
-  </section>
-
-</body>
-</html>
+.card p {
+  font-size: 14px;
+  color: #555;
+}
