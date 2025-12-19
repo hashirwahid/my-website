@@ -1,11 +1,44 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  padding: 15px 30px;
+  background: #f8f9fa;
+  font-size: 20px;
+}
+
+/* Hero Section */
 .hero {
-  background-image: url("https://via.placeholder.com/1200x400");
-  background-size: cover;
-  background-position: center;
-  padding: 120px 0;
+  height: 80vh;
+  background: linear-gradient(135deg, #0d6efd, #084298);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.hero .btn {
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+/* Content section */
+.container {
+  padding: 60px 20px;
 }
