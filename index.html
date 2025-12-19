@@ -2,25 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Useful Websites Hub</title>
+  <title>Useful Websites</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">WebHub</div>
-  <ul class="nav-links">
-    <li>Home</li>
-    <li>Websites</li>
-    <li>About</li>
-  </ul>
+  <h2>Useful Websites</h2>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Useful Websites for Students & Creators</h1>
-  <p>Click any website to learn what it does and how it helps you.</p>
+  <h1>Best Useful Websites</h1>
+  <p>Click “About” to see full details</p>
 </section>
 
 <!-- CARDS -->
@@ -28,36 +23,38 @@
 
   <div class="card">
     <h3>ChatGPT</h3>
-    <p>AI assistant for writing, learning & coding</p>
-    <button onclick="showDetails('chatgpt')">View Details</button>
+    <p>AI tool for writing & learning</p>
+    <button onclick="openAbout('chatgpt')">About</button>
   </div>
 
   <div class="card">
-    <h3>Google</h3>
-    <p>Search engine for information</p>
-    <button onclick="showDetails('google')">View Details</button>
+    <h3>W3Schools</h3>
+    <p>Learn coding easily</p>
+    <button onclick="openAbout('w3')">About</button>
   </div>
 
   <div class="card">
-    <h3>YouTube</h3>
-    <p>Videos for learning & entertainment</p>
-    <button onclick="showDetails('youtube')">View Details</button>
+    <h3>Canva</h3>
+    <p>Design graphics online</p>
+    <button onclick="openAbout('canva')">About</button>
   </div>
 
   <div class="card">
-    <h3>GitHub</h3>
-    <p>Store and share coding projects</p>
-    <button onclick="showDetails('github')">View Details</button>
+    <h3>Remove.bg</h3>
+    <p>Remove image background</p>
+    <button onclick="openAbout('removebg')">About</button>
   </div>
 
 </section>
 
-<!-- DETAILS BOX -->
-<section id="details" class="details">
-  <h2 id="detail-title">Click a website</h2>
-  <p id="detail-text">Details will appear here.</p>
-  <a id="detail-link" href="#" target="_blank"></a>
-</section>
+<!-- ABOUT POPUP -->
+<div id="aboutBox" class="about-box">
+  <div class="about-content">
+    <span class="close" onclick="closeAbout()">×</span>
+    <h2 id="aboutTitle"></h2>
+    <p id="aboutText"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
