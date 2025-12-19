@@ -9,49 +9,49 @@
 
 <header class="hero">
   <h1>Useful Websites for Students</h1>
-  <p>Best tools for learning, productivity & growth</p>
+  <p>Hand-picked tools for learning, productivity & growth</p>
 </header>
 
 <section class="cards">
 
-  <!-- Card 1 -->
+  <!-- CARD 1 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" />
+    <img src="https://picsum.photos/400/250?1">
     <h2>ChatGPT</h2>
-    <p>AI assistant for writing & learning</p>
-    <button onclick="openModal('chatgpt')">About</button>
+    <p>AI assistant for writing, learning & coding.</p>
+    <button onclick="openModal('chatgpt')">Read More</button>
   </div>
 
-  <!-- Card 2 -->
+  <!-- CARD 2 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" />
+    <img src="https://picsum.photos/400/250?2">
     <h2>W3Schools</h2>
-    <p>Learn coding step by step</p>
-    <button onclick="openModal('w3')">About</button>
+    <p>Learn HTML, CSS, JavaScript step-by-step.</p>
+    <button onclick="openModal('w3')">Read More</button>
   </div>
 
-  <!-- Card 3 -->
+  <!-- CARD 3 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" />
+    <img src="https://picsum.photos/400/250?3">
     <h2>YouTube</h2>
-    <p>Videos for learning & skills</p>
-    <button onclick="openModal('youtube')">About</button>
+    <p>Free video learning platform.</p>
+    <button onclick="openModal('youtube')">Read More</button>
   </div>
 
-  <!-- Card 4 -->
+  <!-- CARD 4 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+    <img src="https://picsum.photos/400/250?4">
     <h2>GitHub</h2>
-    <p>Store & share coding projects</p>
-    <button onclick="openModal('github')">About</button>
+    <p>Store, share & collaborate on code.</p>
+    <button onclick="openModal('github')">Read More</button>
   </div>
 
 </section>
 
-<!-- MODAL -->
-<div class="modal" id="modal">
+<!-- MODAL (DETAIL VIEW) -->
+<div id="modal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
+    <span class="close" onclick="closeModal()">&times;</span>
     <div id="modal-text"></div>
   </div>
 </div>
