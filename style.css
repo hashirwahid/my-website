@@ -1,18 +1,70 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
+/* NAVBAR */
+.navbar {
+  background: #1f2933;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* HERO */
 .hero {
-  background: #212529;
-  padding: 80px 0;
+  text-align: center;
+  padding: 50px;
+  background: #111827;
+  color: white;
 }
 
-.site-card {
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
   border-radius: 8px;
-  transition: 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.site-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* DETAILS */
+.details {
+  background: white;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.details a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: bold;
 }
