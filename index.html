@@ -7,21 +7,32 @@
 </head>
 <body>
 
-<section class="hero">
+<!-- HERO -->
+<header class="hero">
   <h1>Top Free Websites for Students</h1>
   <p>50+ free tools every student should know</p>
+</header>
+
+<!-- SEARCH -->
+<section class="search-box">
+  <input type="text" id="searchInput" placeholder="Search websites...">
 </section>
 
+<!-- CARDS -->
 <section class="cards" id="cards"></section>
 
+<!-- DETAILS -->
 <section class="details" id="details">
+  <button class="close" onclick="closeDetails()">✖</button>
   <h2 id="detail-title"></h2>
+  <img id="detail-img">
   <p id="detail-desc"></p>
   <ul id="detail-list"></ul>
+  <a id="detail-link" target="_blank">Visit Website</a>
 </section>
 
 <footer>
-  <p>© 2025 Top Free Student Websites</p>
+  <p>© 2025 | Free Student Resources</p>
 </footer>
 
 <script src="script.js"></script>
