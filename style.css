@@ -1,69 +1,51 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #222;
+  padding: 0 20px;
 }
 
-.navbar {
-  background: #111;
-  color: white;
-  padding: 15px;
+.header {
   text-align: center;
-}
-
-.hero {
-  background: #1e293b;
+  padding: 50px 0;
+  background: #1f2933;
   color: white;
-  text-align: center;
-  padding: 40px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 30px;
+.header h1 {
+  margin-bottom: 10px;
 }
 
-.card {
+.header p {
+  font-size: 18px;
+}
+
+.list-container {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.item {
   background: white;
-  padding: 20px;
-  text-align: center;
+  padding: 24px;
+  margin-bottom: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.card button {
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.item h2 {
+  margin-top: 0;
+  color: #111827;
 }
 
-/* ABOUT POPUP */
-.about-box {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
+.item a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.about-content {
-  background: white;
-  padding: 25px;
-  max-width: 400px;
-  border-radius: 8px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 22px;
-  cursor: pointer;
+.item a:hover {
+  text-decoration: underline;
 }
