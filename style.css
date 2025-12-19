@@ -1,32 +1,40 @@
 body {
+  margin: 0;
   padding-top: 70px;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HERO */
-.hero-section {
-  height: 85vh;
-  background-image: url("https://picsum.photos/1600/900");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: center;
+.aws-hero {
+  background-color: #f2f3f3;
+  padding: 100px 0;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
+.aws-hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.hero-content {
-  position: relative;
-  max-width: 700px;
+.aws-hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-/* Cards hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
+/* SECTIONS */
+.aws-section {
+  padding: 80px 0;
+}
+
+.aws-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.aws-footer {
+  background-color: #232f3e;
+  color: white;
+  padding: 30px 0;
+  margin-top: 40px;
 }
