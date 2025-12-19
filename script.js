@@ -1,9 +1,8 @@
-function openPage(type) {
-  if (type === 'freelancing') {
-    alert('Freelancing is the BEST option for students!');
-  } else if (type === 'microtasks') {
-    alert('Micro-tasks pay very little. Use only if beginner.');
-  } else if (type === 'internships') {
-    alert('Internships help in learning and experience.');
-  }
+function showDetail(id) {
+  const all = document.querySelectorAll('.detail');
+  all.forEach(d => d.style.display = 'none');
+
+  const selected = document.getElementById(id);
+  selected.style.display = 'block';
+  selected.scrollIntoView({ behavior: 'smooth' });
 }
