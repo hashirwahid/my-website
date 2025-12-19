@@ -7,59 +7,55 @@
 </head>
 <body>
 
-<header class="header">
+<header class="hero">
   <h1>Useful Websites for Students</h1>
-  <p>A curated list of the best tools & resources to learn, create and grow.</p>
+  <p>Best tools for learning, productivity & growth</p>
 </header>
 
-<section class="list-container">
+<section class="cards">
 
-  <div class="item">
-    <h2>1. ChatGPT</h2>
-    <p>
-      <strong>What it is:</strong> ChatGPT is an AI-powered conversational tool that helps you write content, learn new topics, generate ideas, solve problems, and more.
-    </p>
-    <p>
-      <strong>Why useful:</strong> Great for students, researchers, writers, and programmers who need fast answers, explanations, or creative help.
-    </p>
-    <p><a href="https://chat.openai.com" target="_blank">Visit ChatGPT</a></p>
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" />
+    <h2>ChatGPT</h2>
+    <p>AI assistant for writing & learning</p>
+    <button onclick="openModal('chatgpt')">About</button>
   </div>
 
-  <div class="item">
-    <h2>2. W3Schools</h2>
-    <p>
-      <strong>What it is:</strong> W3Schools is a comprehensive web development tutorial site covering HTML, CSS, JavaScript, Python, SQL and more.
-    </p>
-    <p>
-      <strong>Why useful:</strong> Beginner-friendly guides and examples make it perfect for learning coding step-by-step.
-    </p>
-    <p><a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a></p>
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" />
+    <h2>W3Schools</h2>
+    <p>Learn coding step by step</p>
+    <button onclick="openModal('w3')">About</button>
   </div>
 
-  <div class="item">
-    <h2>3. YouTube</h2>
-    <p>
-      <strong>What it is:</strong> YouTube is a vast video platform with tutorials, lectures, and educational channels.
-    </p>
-    <p>
-      <strong>Why useful:</strong> Learn anything visually — from calculus to DIY projects, languages to software tutorials.
-    </p>
-    <p><a href="https://www.youtube.com" target="_blank">Visit YouTube</a></p>
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" />
+    <h2>YouTube</h2>
+    <p>Videos for learning & skills</p>
+    <button onclick="openModal('youtube')">About</button>
   </div>
 
-  <div class="item">
-    <h2>4. GitHub</h2>
-    <p>
-      <strong>What it is:</strong> GitHub is a platform to host and share code repos, collaborate on software, and showcase projects.
-    </p>
-    <p>
-      <strong>Why useful:</strong> Essential for developers and students learning programming and version control.
-    </p>
-    <p><a href="https://github.com" target="_blank">Visit GitHub</a></p>
+  <!-- Card 4 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+    <h2>GitHub</h2>
+    <p>Store & share coding projects</p>
+    <button onclick="openModal('github')">About</button>
   </div>
 
-  <!-- You can add more items here -->
 </section>
 
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <div id="modal-text"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
