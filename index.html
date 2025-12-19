@@ -2,59 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Useful Websites for Students</title>
+  <title>Online Earning for Students</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <h1>Useful Websites for Students</h1>
-  <p>Hand-picked tools for learning, productivity & growth</p>
+<header>
+  <h1>Online Earning for Students</h1>
+  <p>Simple ways to earn online while studying</p>
 </header>
 
 <section class="cards">
 
-  <!-- CARD 1 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/250?1">
-    <h2>ChatGPT</h2>
-    <p>AI assistant for writing, learning & coding.</p>
-    <button onclick="openModal('chatgpt')">Read More</button>
+  <div class="card" onclick="openPage('freelancing')">
+    <h2>Freelancing</h2>
+    <p>Earn by selling your skills online</p>
   </div>
 
-  <!-- CARD 2 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/250?2">
-    <h2>W3Schools</h2>
-    <p>Learn HTML, CSS, JavaScript step-by-step.</p>
-    <button onclick="openModal('w3')">Read More</button>
+  <div class="card" onclick="openPage('microtasks')">
+    <h2>Micro-Tasks</h2>
+    <p>Small tasks, small earnings</p>
   </div>
 
-  <!-- CARD 3 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/250?3">
-    <h2>YouTube</h2>
-    <p>Free video learning platform.</p>
-    <button onclick="openModal('youtube')">Read More</button>
-  </div>
-
-  <!-- CARD 4 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/250?4">
-    <h2>GitHub</h2>
-    <p>Store, share & collaborate on code.</p>
-    <button onclick="openModal('github')">Read More</button>
+  <div class="card" onclick="openPage('internships')">
+    <h2>Internships</h2>
+    <p>Learn + earn experience</p>
   </div>
 
 </section>
 
-<!-- MODAL (DETAIL VIEW) -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div id="modal-text"></div>
-  </div>
-</div>
+<section id="content">
+  <h2>Freelancing (Best Option)</h2>
+  <p><strong>Best for students:</strong> Canva Graphic Design</p>
+
+  <ul>
+    <li>Create thumbnails</li>
+    <li>Social media posts</li>
+    <li>Posters & flyers</li>
+  </ul>
+
+  <h3>Best Website</h3>
+  <p>👉 Fiverr (Beginner friendly)</p>
+
+  <h3>Steps to Start</h3>
+  <ol>
+    <li>Learn Canva basics</li>
+    <li>Create Fiverr account</li>
+    <li>Post one gig</li>
+    <li>Deliver work & get paid</li>
+  </ol>
+</section>
+
+<footer>
+  <p>© 2025 Online Earning for Students</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
