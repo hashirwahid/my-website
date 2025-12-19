@@ -1,78 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Free Websites for Students</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-  background: #f4f6f8;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #1f2a37, #2d3a4b);
-  color: #fff;
-  text-align: center;
-  padding: 90px 20px;
-  position: relative;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Top Free Websites for Students</h1>
+    <p>50+ free tools every student should know</p>
+    <div class="made-by">Made by: Hashir Wahid</div>
+  </section>
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 12px;
-}
+  <!-- CARDS -->
+  <section class="container">
 
-.hero p {
-  font-size: 18px;
-  opacity: 0.9;
-}
+    <a class="card" href="https://chat.openai.com" target="_blank">
+      <img src="https://logo.clearbit.com/openai.com" alt="ChatGPT">
+      <h3>ChatGPT</h3>
+      <p>AI assistant for study & writing</p>
+    </a>
 
-.made-by {
-  position: absolute;
-  right: 40px;
-  bottom: 25px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.85);
-}
+    <a class="card" href="https://www.khanacademy.org" target="_blank">
+      <img src="https://logo.clearbit.com/khanacademy.org" alt="Khan Academy">
+      <h3>Khan Academy</h3>
+      <p>Free education platform</p>
+    </a>
 
-/* GRID CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
+    <a class="card" href="https://www.coursera.org" target="_blank">
+      <img src="https://logo.clearbit.com/coursera.org" alt="Coursera">
+      <h3>Coursera</h3>
+      <p>University-level courses</p>
+    </a>
 
-/* CARD */
-.card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease;
-}
+    <a class="card" href="https://www.edx.org" target="_blank">
+      <img src="https://logo.clearbit.com/edx.org" alt="edX">
+      <h3>edX</h3>
+      <p>Harvard & MIT courses</p>
+    </a>
 
-.card:hover {
-  transform: translateY(-6px);
-}
+  </section>
 
-.card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-}
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
