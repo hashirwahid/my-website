@@ -7,18 +7,6 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(
-      rgba(31, 42, 53, 0.75),
-      rgba(31, 42, 53, 0.75)
-    ),
-    url("images/freelancing.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
   background: #1f2a35;
   color: white;
   padding: 90px 20px;
