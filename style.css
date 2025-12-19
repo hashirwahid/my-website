@@ -14,20 +14,19 @@ body {
 
 /* CARDS */
 .cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 40px;
-  flex-wrap: wrap;
 }
 
 .card {
   background: white;
-  padding: 25px 45px;
+  padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
 }
 
 .card:hover {
@@ -37,16 +36,11 @@ body {
 /* DETAILS */
 .details {
   max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.detail {
-  display: none;
+  margin: 40px auto;
   background: white;
   padding: 30px;
-  margin: 20px 0;
   border-radius: 12px;
+  display: none;
 }
 
 footer {
