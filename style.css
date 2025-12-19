@@ -2,76 +2,52 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f6f8;
-  color: #333;
 }
 
 /* HERO */
 .hero {
-  background: #1f2a35;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("images/freelancing.jpg") center/cover no-repeat;
   color: white;
-  padding: 90px 20px;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-/* INTRO */
-.intro {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
+  padding: 100px 20px;
 }
 
 /* CARDS */
 .cards {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 20px;
   padding: 40px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
-  width: 230px;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
+  padding: 25px 40px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  background: #e8efff;
 }
 
 /* DETAILS */
 .details {
   max-width: 900px;
-  margin: 20px auto;
+  margin: auto;
+  padding: 20px;
 }
 
 .detail {
   display: none;
   background: white;
   padding: 30px;
-  margin: 20px;
+  margin: 20px 0;
   border-radius: 12px;
-}
-
-.detail ul {
-  padding-left: 20px;
 }
 
 footer {
