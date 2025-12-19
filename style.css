@@ -4,21 +4,16 @@ body {
 }
 
 .hero {
-  height: 70vh;
-  background: linear-gradient(120deg, #000428, #004e92);
-  display: flex;
-  align-items: center;
+  background: linear-gradient(120deg, #141e30, #243b55);
+  padding: 100px 0;
 }
 
-.product-card {
+.site-card {
   transition: 0.3s;
+  height: 100%;
 }
 
-.product-card:hover {
+.site-card:hover {
   transform: translateY(-8px);
-}
-
-.price {
-  font-weight: bold;
-  color: #f39c12;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
