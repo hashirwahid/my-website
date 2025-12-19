@@ -2,59 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Online Earning for Students</title>
+  <title>Online Earning for Students – Freelancing</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero">
   <h1>Online Earning for Students</h1>
-  <p>Simple ways to earn online while studying</p>
-</header>
+  <p>Earn online through freelancing — real skills, real income</p>
+</section>
 
+<!-- INTRO -->
+<section class="intro">
+  <h2>What is Freelancing?</h2>
+  <p>
+    Freelancing means offering your skills online and getting paid per project.
+    Students can earn money while studying by working remotely for clients worldwide.
+  </p>
+</section>
+
+<!-- CARDS -->
 <section class="cards">
 
-  <div class="card" onclick="openPage('freelancing')">
-    <h2>Freelancing</h2>
-    <p>Earn by selling your skills online</p>
+  <div class="card" onclick="showDetail('fiverr')">
+    <h3>Fiverr</h3>
+    <p>Best for beginners</p>
   </div>
 
-  <div class="card" onclick="openPage('microtasks')">
-    <h2>Micro-Tasks</h2>
-    <p>Small tasks, small earnings</p>
+  <div class="card" onclick="showDetail('upwork')">
+    <h3>Upwork</h3>
+    <p>Professional freelance jobs</p>
   </div>
 
-  <div class="card" onclick="openPage('internships')">
-    <h2>Internships</h2>
-    <p>Learn + earn experience</p>
+  <div class="card" onclick="showDetail('freelancer')">
+    <h3>Freelancer</h3>
+    <p>Bid on projects</p>
+  </div>
+
+  <div class="card" onclick="showDetail('peopleperhour')">
+    <h3>PeoplePerHour</h3>
+    <p>Hourly & fixed work</p>
   </div>
 
 </section>
 
-<section id="content">
-  <h2>Freelancing (Best Option)</h2>
-  <p><strong>Best for students:</strong> Canva Graphic Design</p>
+<!-- DETAILS -->
+<section class="details" id="details">
 
-  <ul>
-    <li>Create thumbnails</li>
-    <li>Social media posts</li>
-    <li>Posters & flyers</li>
-  </ul>
+  <div class="detail" id="fiverr">
+    <h2>Fiverr</h2>
+    <p>
+      Fiverr is a beginner-friendly freelancing platform where students can sell
+      services starting from $5.
+    </p>
+    <ul>
+      <li>No experience required</li>
+      <li>Easy account creation</li>
+      <li>Clients come to you</li>
+      <li>Fast payments</li>
+    </ul>
+    <p><strong>Best for:</strong> Canva design, writing, video editing</p>
+  </div>
 
-  <h3>Best Website</h3>
-  <p>👉 Fiverr (Beginner friendly)</p>
+  <div class="detail" id="upwork">
+    <h2>Upwork</h2>
+    <p>
+      Upwork is a professional freelancing website with higher-paying clients
+      and long-term projects.
+    </p>
+    <ul>
+      <li>Higher competition</li>
+      <li>Better income potential</li>
+      <li>Skill-based jobs</li>
+    </ul>
+    <p><strong>Best for:</strong> Developers, writers, marketers</p>
+  </div>
 
-  <h3>Steps to Start</h3>
-  <ol>
-    <li>Learn Canva basics</li>
-    <li>Create Fiverr account</li>
-    <li>Post one gig</li>
-    <li>Deliver work & get paid</li>
-  </ol>
+  <div class="detail" id="freelancer">
+    <h2>Freelancer</h2>
+    <p>
+      Freelancer allows you to bid on projects posted by clients worldwide.
+    </p>
+    <ul>
+      <li>Wide range of jobs</li>
+      <li>Project-based work</li>
+      <li>International clients</li>
+    </ul>
+    <p><strong>Best for:</strong> Beginners & intermediate freelancers</p>
+  </div>
+
+  <div class="detail" id="peopleperhour">
+    <h2>PeoplePerHour</h2>
+    <p>
+      PeoplePerHour focuses on hourly and fixed-price freelance services.
+    </p>
+    <ul>
+      <li>Verified clients</li>
+      <li>Quality projects</li>
+      <li>Skill-focused platform</li>
+    </ul>
+    <p><strong>Best for:</strong> Designers & developers</p>
+  </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2025 Online Earning for Students</p>
+  <p>© 2025 Online Earning for Students – Freelancing</p>
 </footer>
 
 <script src="script.js"></script>
