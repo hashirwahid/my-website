@@ -9,7 +9,6 @@ body {
   background: #f4f6f8;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #1f2a37, #2d3a4b);
   color: #fff;
@@ -30,13 +29,12 @@ body {
 
 .made-by {
   position: absolute;
-  right: 30px;
+  right: 40px;
   bottom: 25px;
   font-size: 14px;
   opacity: 0.85;
 }
 
-/* GRID */
 .container {
   max-width: 1200px;
   margin: 50px auto;
@@ -46,7 +44,6 @@ body {
   gap: 25px;
 }
 
-/* CARD */
 .card {
   background: #fff;
   border-radius: 14px;
